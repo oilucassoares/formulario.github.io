@@ -1,0 +1,90 @@
+*{
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+div#menu-principal{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 15px;   
+    
+}
+div#menu-principal h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+input, label{
+    display: block;
+    outline: none;
+    width: 100%;
+    color: black;
+}
+a{
+    color: #E60084;
+}
+body{
+    background-image: url(../imagem/fundo.jpg);
+    background-size: cover;
+}
+
+div.caixa-inteira{
+    flex: 1 1 100%;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+div.espaco{
+    margin-right: 2.5%;
+
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;    
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 3px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+input:focus{
+    border-color: #E60084;
+}
+
+#termos, #termos-label{
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+input#botao{
+    width: 110px;
+    padding: 5px;    
+    background-color: rgba(189, 21, 21, 0.829);
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+
+}
+p.erro-validacao{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+    
+}
+p.template{
+    display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagem/favicon.png" type="image/favicon">
+</head>
+<body>
+    <div id="menu-principal">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="registro-formulario" action="">
+            <div class="caixa-inteira">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" data-min-length="2" data-email-validate>
+            </div>
+            <div class="metade-caixa espaco">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+            </div>
+            <div class="metade-caixa">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" data-required data-only-letters>
+            </div>
+            <div class="metade-caixa espaco">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite seu senha" data-password-validate data-required>
+            </div>
+            <div class="metade-caixa">
+                <label for="conf-senha">Confirmar senha</label>
+                <input type="password" name="conf-senha" id="conf-senha" placeholder="confirme sua senha" data-equal="password">
+            </div>
+            <div>
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos" id="termos-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <div id="botao">
+                <input id="botao" type="submit" value="REGISTRAR">
+            </div>
+        </form>
+        <footer id="rodape">
+            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/lucassoares96/"><img src="imagem/linkedin.png" alt=""></a>
+
+            <a id="whatsapp" target="_blank" href="https://api.whatsapp.com/send?l=pt&amp;phone=55051981010414"><img    src="imagem/whatsapp.png"></a>
+        </footer>
+        
+    </div>
+    <p class="erro-validacao template"></p>
+    
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
