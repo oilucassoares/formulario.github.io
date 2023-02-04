@@ -1,14 +1,19 @@
 *{
-    margin: auto;
+    min-width: auto;
+    max-width: auto;
+    /*margin: auto;*/
     margin-top: 5px;
-    padding: 4px;
+    margin-bottom: 10px;
+    padding: 1px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #323232;
     border: none;
 }
 div#menu-principal{
-    width: 450px;
+    /*width: 450px;*/
+    min-width: 100px;
+    max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFF;
@@ -28,6 +33,7 @@ input, label{
     width: 100%;
     color: black;
 }
+
 a{
     color: #E60084;
 }
@@ -47,8 +53,7 @@ form{
     
 }
 div.espaco{
-    margin-right: 2.5%;
-
+    margin-right: 2.5%;  
 }
 label{
     font-weight: bold;
@@ -56,9 +61,11 @@ label{
 }
 input{
     border-bottom: 2px solid #323232;
-    padding: 3px;
-    font-size: .9rem;
-    margin-bottom: 40px;
+    padding: 4px;
+    min-width: 100px;
+    max-width: 1000px;
+    font-size: .7rem;
+    margin-bottom: 0px;
 }
 input:focus{
     border-color: #E60084;
@@ -67,10 +74,16 @@ input:focus{
 #termos, #termos-label{
     text-align: center;
     display: inline-block;
-    width: auto;
+    /*width: auto;*/
+    min-width: 100px;
+    max-width: 1050px;
+    margin-bottom: 5px;
 }
 input#botao{
-    width: 110px;
+    width: 110%;
+    
+    /*min-width: 100px;
+    max-width: 1000px;*/
     padding: 5px;    
     background-color: rgba(189, 21, 21, 0.829);
     border-radius: 20px;
