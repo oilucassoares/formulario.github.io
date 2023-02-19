@@ -116,6 +116,7 @@ body{
 }
 form{
     max-width: 1000px;
+    margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
