@@ -4,53 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Formulário</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/favicon">
 </head>
 <body>
-    <div id="menu-principal">
-        <h1>Cadastre-se para acessar o sistema</h1>
-        <form id="registro-formulario" action="">
-            <div class="caixa-inteira">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email" data-min-length="2" data-email-validate required>
-            </div>
-            <div class="metade-caixa espaco">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" required>
-            </div>
-            <div class="metade-caixa">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" data-required data-only-letters required>
-            </div>
-            <div class="metade-caixa espaco">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Digite seu senha" data-password-validate data-required required>
-            </div>
-            <div class="metade-caixa">
-                <label for="conf-senha">Confirmar senha</label>
-                <input type="password" name="conf-senha" id="conf-senha" placeholder="confirme sua senha" data-equal="password" required>
-            </div>
-            <div class="termos-box">
-                <input type="checkbox" name="termos" id="termos"  required>
-                <label for="termos" id="termos-label">Eu li e aceito os <a href="#">termos de uso</a></label>
-            </div>
-            <div id="botao">
-                <input id="botao" type="submit" value="REGISTRAR">
-            </div>
-        </form>
-        
-        <footer id="rodape">
-            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/lucassoares96/"><img src="imagem/linkedin.png" alt=""></a>
+    <div class="main-login">
 
-            <a id="whatsapp" target="_blank" href="https://api.whatsapp.com/send?l=pt&amp;phone=55051981010414"><img    src="imagem/whatsapp.png"></a>
-        </footer>
+        <div class="left-login">
+            <h1>Faça login<br>E entre para nosso time</h1>
+            <img src="imagem.svg" class="left-login-image" alt="woman">
+        </div>
+
+        <form action="">
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Seu usuário" data-min-length="3" required>
+                        
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Sua senha" required>
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+            </div>
+
+           
+        </form>       
         
+
     </div>
-    <p class="erro-validacao template"></p>
-    
-
-    <script src="javascript/script.js"></script>
 </body>
 </html>
