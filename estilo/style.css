@@ -4,6 +4,7 @@ body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif; 
     /*o nome da fonte está em aspas porque é para chamar primeiro (prioridade). Caso não ache, pegue a segunda opção que é o sans-serif sem aspas.*/
+    overflow: hidden;
 }
 
 .main-login{
@@ -115,8 +116,10 @@ body{
     background-color: #09e07c;
 }
 form{
-    max-width: 1000px;
-    margin-bottom: auto;
+    min-width: 230px;
+    max-width: 1200px;
+    margin-bottom: 5px;
+    margin-right: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
