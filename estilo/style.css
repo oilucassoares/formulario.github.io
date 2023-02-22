@@ -20,6 +20,7 @@ body{
 }
 
 .left-login{
+    margin-left: 2%;
     width: 50vw; /*Ocupar apenas 50% da tela*/
     height: 100vh; /*Ocupar altura inteira da tela*/
     display: flex;
