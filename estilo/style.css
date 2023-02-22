@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap'); /*fonte importada do Google Fonts*/
 
 body{
+    overflow: hidden;
     margin: 0;
+    padding: 0;
     font-family: 'Noto Sans', sans-serif; 
     /*o nome da fonte está em aspas porque é para chamar primeiro (prioridade). Caso não ache, pegue a segunda opção que é o sans-serif sem aspas.*/
-    overflow: hidden;
+    
 }
 
 .main-login{
@@ -33,6 +35,7 @@ body{
 
 .left-login-image{
     width: 30vw;
+    margin-left: 5px;
 }
 
 .right-login{
@@ -40,7 +43,7 @@ body{
     height: 89vh; /*Ocupar altura inteira da tela*/
     margin: 5%;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 }
 
@@ -73,7 +76,7 @@ body{
 }
 
 .textfield > input{
-    width: 100%;
+    width: 110%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -116,13 +119,12 @@ body{
     background-color: #09e07c;
 }
 form{
-    min-width: 230px;
-    max-width: 1200px;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    min-width: 210px;
+    max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    flex-direction: row-reverse;
 }
 
 .rodape{
